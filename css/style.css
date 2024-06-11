@@ -26,6 +26,7 @@ ul {
 
 img {
     width: 100%;
+    object-fit: cover;
 }
 
 :root {
@@ -425,8 +426,13 @@ body {
 }
 
 /*HERO*/
+/* .hero {
+    height: 100%;
+} */
+
 .hero__container {
     position: relative;
+    /* height: 100%; */
 }
 
 .hero__content {
@@ -478,10 +484,14 @@ body {
 .hero__player {   
     position: absolute;
     top: 50px;
-    right: -100px;
+    right: -50px;
     z-index: -1;
-    width: 100%;
-    height: auto;
+    width: 830px;
+    height: 810px;
+    background-image: url(../images/Player.webp);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: cover;
 }
 
 .hero__playlist {
@@ -500,7 +510,7 @@ body {
     gap: 15px;
     border: 2px solid var(--color-white);
     border-radius: 20px;   
-    min-height: 60rem; 
+    /* min-height: 60rem;  */
 }
 
 .item {
