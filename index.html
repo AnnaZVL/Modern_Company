@@ -7,16 +7,27 @@
     <title>Music</title>
     <link rel="stylesheet" href="./css/normalize.css">
     <link rel="stylesheet" href="./css/style.css">
-
+    <link rel="stylesheet" href="./css/media.css">
 </head>
 
 <body>
     <div class="wrapper">
+        <div class="star-container"></div>
         <header class="header">
             <div class="header__container container">
                 <div class="header__left">
                     <a class="header__logo logo" href="#">
-                        <img class="logo__img" src="./images/Logo.png" alt="Logo">
+                        <svg class="logo__icon" xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink" width="100" zoomAndPan="magnify"
+                            viewBox="0 0 375 374.999991" height="80" preserveAspectRatio="xMidYMid meet" version="1.0">
+                            <rect x="-37.5" width="450" fill="none" y="-37.499999" height="449.999989"
+                                fill-opacity="1" />
+                            <rect x="-37.5" width="450" fill="none" y="-37.499999" height="449.999989"
+                                fill-opacity="1" />
+                            <path fill="#535ff6"
+                                d="M 64.144531 71.296875 L 135.929688 215.683594 C 157.066406 196.777344 175.667969 163.609375 174.628906 136.433594 L 152.910156 93.601562 C 152.128906 92.0625 150.800781 90.875 149.183594 90.277344 L 72.675781 61.816406 C 66.851562 59.648438 61.375 65.730469 64.144531 71.296875 Z M 192.96875 150.203125 C 193.152344 149.929688 193.324219 149.640625 193.472656 149.332031 L 220.726562 94.097656 C 221.5 92.53125 222.847656 91.316406 224.488281 90.703125 L 302.402344 61.722656 C 308.195312 59.5625 313.660156 65.570312 310.96875 71.132812 L 195.3125 310.273438 C 192.828125 315.40625 185.53125 315.445312 182.992188 310.34375 L 138.386719 220.613281 C 162.84375 203.128906 182 178.695312 192.96875 150.203125 "
+                                fill-opacity="1" fill-rule="nonzero" />
+                        </svg>
                     </a>
                     <button class="header__burger btn burger" id="burger">
                         <span class="burger__line"></span>
@@ -51,7 +62,7 @@
                 <div class="header__right">
                     <button class="header__social btn" id="social"></button>
                     <div class="header__icons" id="icons">
-                        <a class="header__link" href="https://t.me/" aria-label="Перейти в Телеграмм">
+                        <a class="header__link" href="https://t.me/" aria-label="Перейти в Телеграмм" target="_blank">
                             <svg class="header__icon" xmlns="http://www.w3.org/2000/svg"
                                 xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512"
                                 style="enable-background:new 0 0 512 512;" xml:space="preserve">
@@ -69,7 +80,7 @@
                                 </g>
                             </svg>
                         </a>
-                        <a class="header__link" href="https://vk.com/" aria-label="Перейти в VK">
+                        <a class="header__link" href="https://vk.com/" aria-label="Перейти в VK" target="_blank">
                             <svg class="header__icon" width="40" height="40" viewBox="0 0 513 512"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path
@@ -79,7 +90,7 @@
                             </svg>
 
                         </a>
-                        <a class="header__link" href="https://wa.me/" aria-label="Перейти в Ватсап">
+                        <a class="header__link" href="https://wa.me/" aria-label="Перейти в Ватсап" target="_blank">
                             <svg class="header__icon" xmlns="http://www.w3.org/2000/svg"
                                 xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 477.366 477.366"
                                 style="enable-background:new 0 0 477.366 477.366;" xml:space="preserve">
@@ -93,7 +104,7 @@
                                 </g>
                             </svg>
                         </a>
-                        <a class="header__link" href="mailtto:" aria-label="Перейти в почту">
+                        <a class="header__link" href="mailtto:" aria-label="Перейти в почту" target="_blank">
                             <svg class="header__icon" enable-background="new 0 0 512 512" viewBox="0 0 512 512"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path
@@ -126,6 +137,64 @@
                     </div>
                     <div class="hero__player">
                         <img src="./images/Player.webp" alt="Player">
+                        <div class="hero__playlist">
+                            <ul class="playlist">
+                                <li class="playlist__item item">
+                                    <div class="item__img"></div>
+                                    <div class="item__content">
+                                        <h4 class="item__title">Название трека</h4>
+                                        <span class="item__name">Исполнитель</span>
+                                    </div>
+                                    <img class="item__dots" src="./images/icons/three_dots.svg" alt="">
+                                    <div class="item__tooltip-wrapper">
+                                        <div class="item__tooltip">
+                                            Нажмите на трек, что бы воспроизвести его
+                                            <div class="item__circle"></div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="playlist__item item">
+                                    <div class="item__img"></div>
+                                    <div class="item__content">
+                                        <h4 class="item__title">Название трека</h4>
+                                        <span class="item__name">Исполнитель</span>
+                                    </div>
+                                    <img class="item__dots" src="./images/icons/three_dots.svg" alt="">
+                                </li>
+                                <li class="playlist__item item">
+                                    <div class="item__img"></div>
+                                    <div class="item__content">
+                                        <h4 class="item__title">Название трека</h4>
+                                        <span class="item__name">Исполнитель</span>
+                                    </div>
+                                    <img class="item__dots" src="./images/icons/three_dots.svg" alt="">
+                                </li>
+                                <li class="playlist__item item">
+                                    <div class="item__img"></div>
+                                    <div class="item__content">
+                                        <h4 class="item__title">Название трека</h4>
+                                        <span class="item__name">Исполнитель</span>
+                                    </div>
+                                    <img class="item__dots" src="./images/icons/three_dots.svg" alt="">
+                                </li>
+                                <li class="playlist__item item">
+                                    <div class="item__img"></div>
+                                    <div class="item__content">
+                                        <h4 class="item__title">Название трека</h4>
+                                        <span class="item__name">Исполнитель</span>
+                                    </div>
+                                    <img class="item__dots" src="./images/icons/three_dots.svg" alt="">
+                                </li>
+                                <li class="playlist__item item">
+                                    <div class="item__img"></div>
+                                    <div class="item__content">
+                                        <h4 class="item__title">Название трека</h4>
+                                        <span class="item__name">Исполнитель</span>
+                                    </div>
+                                    <img class="item__dots" src="./images/icons/three_dots.svg" alt="">
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </section>
