@@ -86,7 +86,7 @@ body {
     padding-top: 200px;
     height: 100vh;
     position: relative;    
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 
 .wrapper::after {
