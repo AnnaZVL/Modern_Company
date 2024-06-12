@@ -617,3 +617,53 @@ body {
         opacity: 0;
       } 
 }
+
+main {
+    height: 100%;
+}
+
+.hero2 {
+    position: relative;
+    height: 100%;
+}
+
+.hero__container2::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    width: 50%;
+    height: 70%;
+    background-image: url(../images/Player.webp);
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: contain;
+    transform: translate(45%, 20%);
+}
+
+.hero__container2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+.hero__ifon {
+    margin: 0 auto;    
+    position: relative;
+    /* width: 100%;
+    height: 100%; */
+}
+
+.ifon__img {
+    width: 120%;
+}
+
+.ifon__video {
+    position: absolute;
+    top: -2%;
+    right: -9%;
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+}
