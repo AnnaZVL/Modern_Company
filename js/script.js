@@ -49,7 +49,6 @@ document.addEventListener("DOMContentLoaded", () => {
         $btnSocial.classList.remove('open');
         $icons.classList.remove('open');
     })
-
  
     const starContainer = document.querySelector('.star-container');
 
