@@ -717,9 +717,9 @@ main, .hero2, .hero__container2 {
 .ifon__inner {
     position: absolute;
     top: -22px;
-    right: 6%;
-    width: 600px;
-    height: 750px;
+    right: 3%;
+    width: 400px;
+    height: 450px;
 }
 
 .ifon__video {
