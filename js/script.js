@@ -62,8 +62,9 @@ document.addEventListener("DOMContentLoaded", () => {
         star.style.height = size;
         star.style.left = Math.random() * 100 + 'vw';
         star.style.top = Math.random() * 100 + 'vh';
+        
         star.style.setProperty('--direction', (Math.random() - 0.5) * 2); // направление по горизонтали
-
+        
         starContainer.appendChild(star);
 
         setTimeout(() => {
