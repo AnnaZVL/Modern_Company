@@ -47,32 +47,26 @@
         left: -50%;
     }
 
-    .hero__container {        
+    .hero__container {
         display: flex;
         flex-direction: column;
+        gap: 20px;
         align-items: center;
-        gap: 30px;
     }
 
     .hero__content {
-        margin-top: 40px;
-        align-items: center;
-        width: 100%;
+        position: static;
+        align-items: center;     
+        width: 100%;   
     }
     
     .hero__title, .hero__descr, .hero__descr--strong {
         text-align: center;
     }
-
-    .hero__player {
-        position: relative;
-        top: 170px;
-        left: 0;
-        transform: translateX(-20%);
-    }
-
-    .playlist {
-        min-height: 53rem;
+    
+    .hero__player {   
+        margin: 0;    
+        width: 100%;
     }
 }
 
@@ -91,7 +85,18 @@
     .container {
         max-width: 762px;
     }
+
+    .hero__player {
+        background-size: cover;
+    }
+
+    .hero__title {
+        font-size: 3.3rem;
+    }
     
+    .hero__descr {
+        font-size: 1.2rem;    
+    }
 }
 
 @media (max-width: 562px) {

@@ -28,42 +28,42 @@ document.addEventListener("DOMContentLoaded", () => {
     })
  
   // Видеоплеер
-  const videoPlayer = document.getElementById('videoPlayer');
+  // const videoPlayer = document.getElementById('videoPlayer');
 
-  // Массив с URL видеофайлов
-  const videos = [
-    './images/train.mp4', 
-    './images/IG-stories.mp4' 
-  ];
+  // // Массив с URL видеофайлов
+  // const videos = [
+  //   './images/train.mp4', 
+  //   './images/IG-stories.mp4' 
+  // ];
 
-  let currentVideoIndex = 0;
+  // let currentVideoIndex = 0;
 
-  // Функция для загрузки и воспроизведения видео
-  const playVideo = (index) => {    
-    if (index < videos.length) {
-      videoPlayer.src = videos[index];
-      videoPlayer.load();
-    }     
-  };
+  // // Функция для загрузки и воспроизведения видео
+  // const playVideo = (index) => {    
+  //   if (index < videos.length) {
+  //     videoPlayer.src = videos[index];
+  //     videoPlayer.load();
+  //   }     
+  // };
 
-  // Событие `canplay` срабатывает, когда видео готово к воспроизведению
-  videoPlayer.addEventListener('canplay', () => {
-    videoPlayer.play();
+  // // Событие `canplay` срабатывает, когда видео готово к воспроизведению
+  // videoPlayer.addEventListener('canplay', () => {
+  //   videoPlayer.play();
 
-    // Установите таймер для переключения видео через 3 секунды
-    setTimeout(() => {
-      videoPlayer.pause();
-      if (currentVideoIndex === (videos.length - 1)) {        
-        currentVideoIndex = 0;    
-    } else { 
-        currentVideoIndex++;
-    }
-    //   if (currentVideoIndex === videos.length) {currentVideoIndex === 0}
-      playVideo(currentVideoIndex);
-    }, 3000); // 3000 миллисекунд = 3 секунды
-  });
+  //   // Установите таймер для переключения видео через 3 секунды
+  //   setTimeout(() => {
+  //     videoPlayer.pause();
+  //     if (currentVideoIndex === (videos.length - 1)) {        
+  //       currentVideoIndex = 0;    
+  //   } else { 
+  //       currentVideoIndex++;
+  //   }
+  //   //   if (currentVideoIndex === videos.length) {currentVideoIndex === 0}
+  //     playVideo(currentVideoIndex);
+  //   }, 3000); // 3000 миллисекунд = 3 секунды
+  // });
 
-  // Запускаем воспроизведение первого видео
-  playVideo(currentVideoIndex);
+  // // Запускаем воспроизведение первого видео
+  // playVideo(currentVideoIndex);
 
 })
